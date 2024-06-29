@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour & Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validate(){
+        var n=document.getElementById("n1").value;
+        var e=document.getElementById("e1").value;
+        var p=document.getElementById("p1").value;
+        var letters=/^[A-Za-z]+$/;
+        var email_val=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        var ph=/^[987]{1}[0-9]{9}$/;
+        if(!letters.test(n))
+        {
+        alert("Name is incorrect must contain alphabets only");
+        }
+        if(!email_val.test(e))
+        {
+        alert("Invalid email format please enter valid email id");
+        }
+        if(!ph.test(p))
+        {
+        alert("invalid number");
+        }
+        else
+        alert("Your Message has been sent successfully");
+        }
+        </script>
+</head>
+<body>
+    <header class="header">
+         
+        <a href="#" class="logo"><i class="fas fa-hiking"></i> tourism.com</a>
+        <nav class="navbar">
+            <div id="nav-close" class="fas fa-times"></div>
+            <a href="#home">home</a>
+            <a href="#category">Adventures</a>
+            <a href="#packages">packages</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div> 
+            <div id="search-btn" class="fas fa-search"></div>
+          
+        </div>
+    </header>
+
+   <section class="home" id="home">
+   
+        <div class="wrapper">
+           
+                <div class="box" style="background: url('tourist.jpg') no-repeat;">
+                <div class="content">
+                    <span>never stop</span>
+                    <h3>exploring</h3>
+                    <p>Collect Moments Not Things!.</p>
+                    <a href="#category" class="btn">get started</a>
+                </div>
+                </div>  
+        </div>
+    </section>
+
+    <!-- Adventure section -->
+
+    <section class="category" id="category">
+
+        <h1 class="heading">Adventure Idea!</h1>
+    
+        <div class="box-container">
+    
+          
+    
+            <div class="box">
+                <img src="C:\Users\dhara\Downloads\images\maxresdefault.jpg" alt="ZipLinesImg">
+                <h3>zip lines</h3>
+                <p>A zip line or flying fox, consists of a pulley suspended on a stainless steel cable, It is designed to enable a user propelled by gravity to travel from the top to  bottom of the inclined cable attached to a harness on the freely moving pulley..</p>
+                <a href="https://en.wikipedia.org/wiki/Zip_line" class="btn">read more</a>
+            </div>
+    
+            <div class="box">
+                <img src="C:\Users\dhara\Downloads\images\ThinkstockPhotos-200117760-001.jpg" alt="canoeingImg">
+                <h3>Canoeing</h3>
+                <p>Canoeing is an activity which involves paddling a canoe with a single-bladed paddle. Common meanings of the term are limited to when the canoeing is the central purpose of the activity.A canoe is a lightweight narrow water vessel .</p>
+                <br>
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Canoeing" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="C:\Users\dhara\Downloads\images\images.jpg" alt="BungeeJumpingImg">
+                <h3>bungee jump</h3>
+                <p>Bungee jumping is an activity that involves a person jumping from a great height while connected to a large elastic cord.Bungee jumping also spelled bungy jumping, is an activity that involves a person jumping from a great height while connected to a large elastic cord.</p>
+                <a href="https://en.wikipedia.org/wiki/Bungee_jumping" class="btn">read more</a>
+            </div>
+        </div>
+    
+    </section>
+    <section class="packages" id="packages">
+
+        <h1 class="heading">Tourist packages</h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <div class="image">
+                    <img src="C:\Users\dhara\Downloads\images\hq720.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Manali Package</h3>
+                    <p>Kullu Manali Shimla has always been a very popular destination for the old, young travelers as well as newly married couples who look for cheapest Manali tour packages &amp; Manali Honeymoon Packages to experience the perfect solitude and calmness at its best.</p>
+                    <div class="price">Rs 4,999 - Rs 7,999</div>
+                    <a href="#contact" class="btn">explore now</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="C:\Users\dhara\Downloads\images\maxresdefault (1).jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Goa Package</h3>
+                    <p>The most popular beach of Goa, Baga is located close to Calangute beach, around 30 Km North of Panaji. Baga is popular for its nightlife with some very famous clubs such as Brittos, Titos and Mambos.There is also a range of water sports that you can try your hands at.</p>
+                    <div class="price">Rs 5,999 - Rs 10,999</div>
+                    <a href="#contact" class="btn">explore now</a>
+                </div>
+            </div>
+    
+    
+    
+            <div class="box">
+                <div class="image">
+                    <img src="C:\Users\dhara\Downloads\images\kerala-tour-packages.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Kerala Package</h3>
+                    <p>A trip to Kerala is always an experience through greenery to the hills and its climate. Browse through our hand-picked Kerala tour packages prepared for you. Our experts are also available to prepare customised tourism packages</p>
+                    <div class="price">Rs 3,999 - Rs 8,999</div>
+                    <a href="#contact" class="btn">explore now</a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+    <section class="contact" id="contact">
+    
+    <div class="wrapper1">
+        <div class="title1">
+          <h1>Contact us</h1>
+        </div>
+        <div class="contact-form">
+            <form method = "post">
+          <div class="input-fields">
+            
+            <input type="text" class="input"  placeholder="Name" name="name" id="n1">
+            <input type="email" class="input"  placeholder="Email Address" name="email" id="e1" pattern=".+@gmail\.com">
+            <input type="phone" class="input"  placeholder="Phone" name="phone" id="p1">
+            <input type="text" class="input"  placeholder="Subject" name="subject">
+          </div>
+          <div class="msg">
+            <textarea placeholder="Message" name="message"></textarea> <br>
+            <div class="btn1"><button type="submit" onClick="validate()">send <i class="uil uil-message"></i></div>
+          </div>
+          </form>
+        </div>
+        </div> 
+    
+    </section>
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#home">home</a>    
+                <a href="#packages">packages</a>
+            </div>
+    
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#contact">ask questions</a>
+                <a href="#">terms of use</a>
+                <a href="#">privacy policy</a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="tel:+91 6385256132">  +91 6385256132</a>
+                <a href="mailto: sibiraj56132@gmail.com"> sibiraj56132@gmail.com</a>
+                <a href="#"> TamilNadu, india </a>
+            </div>
+    
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.instagram.com/sibidharans/?igsh=MTZtZDVkYzVtZGZ5cg%3D%3D">  instagram </a>
+                <a href="https://www.linkedin.com/in/sibidharan-s-09961526b/recent-activity/all/"></i> linkedin </a>
+                <a href="https://github.com/Sibi05">github </a>
+            </div>
+        </div>
+        <div class="credit">created by  <span> sibidharan </span>  |  all rights reserved!</div>
+    </section>
+    <!-- footer section ends -->
+  <script src="js/script.js"></script>
+</body>
+</html>
+
